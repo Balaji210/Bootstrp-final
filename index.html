@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <div class="container-fluid d-flex flex-row main">
+
+
+    <div class="col-lg-2 slide ">
+      <ul class="navbar-nav  sidebar sidebar-dark accordion sl" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center mb-5" href="">
+
+          <div class="sidebar-brand-text mx-2"> <img class="img if" src="images/False.png" >
+            <img class="img if2" src="images/Vector.png" alt="">
+          </div>
+        </a>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link nav-link-item cs" data-url="/Home/Dashboard" href="/Home/Dashboard">
+            <i class="material-icons pr-2">dashboard</i>
+            <span class="mi">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-item cs" data-url="/Home" href="/Home">
+            <i class="material-icons pr-2">date_range</i>
+            <span class="mi">Calander</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed cs" href="#" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fa-solid fa-diagram-project pr-2"></i>
+            <span class="mi">project</span>
+          </a>
+
+        </li>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link cs" href="/Announcement/Announcement">
+            <i class="fa fa-users pr-2" aria-hidden="true"></i>
+            <span class="mi">team</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cs" href="/Announcement/Announcement">
+            <i class="fa fa-cog pr-2" aria-hidden="true"></i>
+            <span class="mi">Setting</span>
+          </a>
+        </li>
+        <li class="sidebar-brand d-flex align-items-center justify-content-center " href="" style="    margin-top: 50%;">
+
+          <button class="sidebar-brand-text btnc mx-2" onclick="click()"> 
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        </li>
+      
+      </ul>
+    </div>
+    <div class="col-lg-10  ">
+      <div class="row d-flex top ">
+        <div class="col-9 d-flex flex-row toprow align-items-center mb-3 ">
+
+          <!-- <input class="search" type="search" name="" id="search-bar">
+          <button class="btn  bt">Search</button> -->
+          <div class="input-group search border-0">
+            <input type="text" class="form-control border-0" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text border-0" id="basic-addon2"> <img class="img " src="images/search.png" alt=""></span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-3 d-flex align-items-center justify-content-end pr-0">
+          <h6 class="name-pro">Jane Cooper</h6>
+          <img class="img se pr-5" src="images/search.png" alt="">
+          <img class="img-thumbnail profile  " src="images/Ellipse 119.png " alt="">
+         
+          
+        </div>
+
+      </div>
+
+      <div class="row d-flex flex-wrap">
+        <div class="col-lg-9 d-flex flex-column middle">
+
+          <div class="row d-flex flex-row flex-wrap mb-4">
+            <div class="col-xl-3 card1  mt-2">
+              <div class="card info-card  sales-card">
+
+
+
+                <div class="card-body">
+                  <div class="card-title d-flex flex-row justify-content-between">
+                    <h6>Monthly Working Hours</h6>
+                    <i class="material-icons cti">date_range</i>
+
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-cart"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h4>145</h4>
+                      
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-xl-3   mt-2">
+              <div class="card info-card sales-card">
+
+
+
+                <div class="card-body">
+                  <div class="card-title d-flex flex-row justify-content-between">
+                    <h6>Weekly Working Hours</h6>
+                    <i class='fas fa-clock cti' style='font-size:20px'></i>
+
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-cart"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h4>40</h4>
+                      
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-xl-3   mt-2">
+              <div class="card info-card h-100  sales-card">
+
+
+
+                <div class="card-body h-100">
+                  <div class="card-title d-flex flex-row justify-content-between">
+                    <h6>Late Days</h6>
+                    <img class="img-thumbnail im" src="images/Group.png" alt="">
+
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-cart"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h4>9</h4>
+                      
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-xl-3   mt-2">
+              <div class="card info-card  sales-card">
+
+
+
+                <div class="card-body">
+                  <div class="card-title d-flex flex-row justify-content-between">
+                    <h6>Leave Without Pay</h6>
+                    <i class="fa-solid fa-face-frown sad"></i>
+
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-cart"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h4>2</h4>
+                      
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+          <div class="row flex-row flex-wrap mid3 ml-1 mr-1 mb-4">
+            <div class="col-lg-4  justify-content-start ">
+              <div class="mid3-sub mt-2 mb-2">
+                <h6 class="m-0">Leaves Remaining</h6>
+                <h1 class="m-0 c-10">10</h1>
+              </div>
+            </div>
+            <div class="col-lg-4  justify-content-start ">
+              <div class="mid3-sub mt-2 mb-2">
+                <h6 class="m-0">Leaves Taken</h6>
+                <h1 class="m-0 c-06">06</h1>
+              </div>
+            </div>
+
+            <div class="col-lg-4  justify-content-start ">
+              <div class="mt-2 mb-2">
+                <h6 class="m-0">Leaves pending to approve</h6>
+                <h1 class="m-0 c-01">01</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row flex-row flex-wrap mb-4">
+
+            <div class="col-xl-7 col-12 ">
+              <div class="fonts">
+                <h3>Employee on leave Today</h3>
+              </div>
+              <div class="card overflow-auto">
+                <div class="card-body pb-0">
+                  <table class="table table-borderless">
+                    <thead class="eold">
+                      <tr>
+                        <th class="p-3" scope="col">Name</th>
+                        <th class="p-3" scope="col">Duration</th>
+                        <th class="p-3 text-truncate" scope="col">Leave Starts</th>
+                        <th class="p-3 text-truncate" scope="col">Leave Ends</th>
+                        <th class="p-3" scope="col">Time</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>John Doe</td>
+                        <td>3.00 Days</td>
+                        <td>12/01/2023</td>
+                        <td>14/01/2023</td>
+                        <td>Full Day</td>
+                      </tr>
+                      <tr>
+                        <td>John Doe</td>
+                        <td>3.00 Days</td>
+                        <td>12/01/2023</td>
+                        <td>14/01/2023</td>
+                        <td>First Half</td>
+                      </tr>
+                      <tr>
+                        <td>John Doe</td>
+                        <td>3.00 Days</td>
+                        <td>12/01/2023</td>
+                        <td>14/01/2023</td>
+                        <td>Full Day</td>
+                      </tr>
+                      <tr>
+                        <td>John Doe</td>
+                        <td>3.00 Days</td>
+                        <td>12/01/2023</td>
+                        <td>14/01/2023</td>
+                        <td>Full Day</td>
+                      </tr>
+                      <tr>
+                        <td>John Doe</td>
+                        <td>3.00 Days</td>
+                        <td>12/01/2023</td>
+                        <td>14/01/2023</td>
+                        <td>Full Day</td>
+                      </tr>
+                      <tr>
+                        <td>John Doe</td>
+                        <td>3.00 Days</td>
+                        <td>12/01/2023</td>
+                        <td>14/01/2023</td>
+                        <td>Full Day</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-12">
+              <div class="fonts">
+                <h3>Conversations</h3>
+              </div>
+              <div class="" style="background-color: white;">
+                <ul class="nav nav-tabs nav-fill align-items-center" id="myTab">
+                    <li class="nav-item n">
+                        <a href="#chats" class="nav-link active n "><h6 class="ac p-0 m-0">Latest Chats</h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#posts" class="nav-link"><h6 class="sc p-0 m-0">Scheduled Posts</h6></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#posts" class="nav-link"><button class="btn" style="background-color: transparent;" data-toggle="collapse" data-target="#col" ><img src="images/Combined-Shape.png" alt=""></button></a>
+                  </li>
+                </ul>
+               
+                <div class="tab-content p-3">
+                    <div class="tab-pane fade show active" id="chats">
+                      <div class="d-flex flex-start mt-4">
+                        <a class="me-3" href="#">
+                          <img
+                            class="rounded-circle shadow-1-strong"
+                            src="images/Rectangle 627.png"
+                            alt="avatar"
+                            width="35"
+                          />
+                        </a>
+                        <div class="flex-grow-1 flex-shrink-1 ">
+                          <div class="pl-3">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <h6 class="mb-1">Yatri Patel</h6>
+                            </div>
+                            <p class="small mb-0 ">
+                              The tasks which we submitted yesterday requires design...
+                            </p>
+                            <div class="d-flex justify-content-between">
+                              <i class="fa-regular fa-heart"></i> 39
+                              <i class="fa-regular fa-comment"></i> 24
+                              <i class="fa-regular fa-bookmark"></i> 102
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-start mt-4">
+                        <a class="me-3" href="#">
+                          <img
+                            class="rounded-circle shadow-1-strong"
+                            src="images/Rectangle 628.png"
+                            alt="avatar"
+                            width="35"
+                          />
+                        </a>
+                        <div class="flex-grow-1 flex-shrink-1">
+                          <div class="pl-3">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <h6 class="mb-1">Kinnari Patel</h6>
+                            </div>
+                            <p class="small mb-0 ">
+                              The tasks which we submitted yesterday requires design...
+                            </p>
+                            <div class="d-flex justify-content-between">
+                              <i class="fa-regular fa-heart"></i> 72
+                              <i class="fa-regular fa-comment"></i> 16
+                              <i class="fa-regular fa-bookmark"></i> 209
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="posts">
+                        <h4 class="mt-2">Profile tab content</h4>
+                        <p>Empty</p>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="row flex-row flex-wrap mb-4">
+
+            <div class="col-12 ">
+              <div class="fonts">
+                <h3>Assigned Tasks</h3>
+              </div>
+              <div class="card overflow-auto">
+                <div class="card-body pb-0">
+                  <table class="table table-borderless">
+                    <thead class="eold">
+                      <tr>
+                        <th class="p-3" scope="col">Task Name</th>
+                        <th class="p-3" scope="col">Date</th>
+                        <th class="p-3" scope="col">Logged Hours</th>
+                        <th class="p-3" scope="col">Task Efficiency</th>
+                        <th class="p-3" scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Magento-VP file-edits</td>
+                        <td>02 Jan 2023</td>
+                        <td>04:00 hrs</td>
+                        <td>100%</td>
+                        <td><img class="img" src="images/dot.png" alt=""></td>
+                      </tr>
+                      <tr>
+                        <td>Magento-VP file-edits</td>
+                        <td>02 Jan 2023</td>
+                        <td>04:00 hrs</td>
+                        <td>100%</td>
+                        <td><img class="img" src="images/dot.png" alt=""></td>
+                      </tr>
+                      <tr>
+                        <td>Magento-VP file-edits</td>
+                        <td>02 Jan 2023</td>
+                        <td>04:00 hrs</td>
+                        <td>100%</td>
+                        <td><img class="img" src="images/dot.png" alt=""></td>
+                      </tr>
+                       
+
+                    </tbody>
+                    
+                     
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 d-flex flex-column mt-2 ">
+          <div class="card mb-2 ccm">
+            <div class="card-header eold  d-flex flex-row justify-content-between">
+              <button class="btn btn-block aco text-left d-flex flex-row align-items-center justify-content-between "
+                data-toggle="collapse" data-target="#collapse-body">
+                <h4 class="text-truncate">Birthdays Today</h4>
+                <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+              </button>
+
+            </div>
+            <div class="collapse show" id="collapse-body">
+              <div class="card-body   d-flex flex-column">
+                <div class="d-flex flex-row c1b">
+                  
+                  <img class="img-thumbnail tm" src="images/Ellipse 121.png" alt="">
+                  <div class="d-flex flex-column ">
+                    <h6>Shubham Mehta</h6>
+                    <p>UX/UI Designer</p>
+
+                  </div>
+                </div>
+                <div class="d-flex flex-row pt-3">
+                  <img class="img-thumbnail tm" src="images/Rectangle 627.png" alt="">
+                  <div class="d-flex flex-column">
+                    <h6>Palak Panchal</h6>
+                    <p>UX/UI Designer</p>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2 ccm">
+            <div class="card-header eold  d-flex flex-row justify-content-between">
+              <button class="btn btn-block aco text-left d-flex flex-row align-items-center justify-content-between "
+                data-toggle="collapse" data-target="#collapse-bo">
+                <h4 class="text-truncate">Work Anniversary</h4>
+                <img src="images/Group (1).png" alt="">
+              </button>
+
+            </div>
+            <div class="collapse show" id="collapse-bo">
+              <div class="card-body   d-flex flex-column">
+                <div class="d-flex flex-row c1b justify-content-between ">
+                  
+                  <ul class="d-flex flex-row list-unstyled">
+                    <li><img src="images/Ellipse 121 (1).png" alt=""></li>
+                    <li><div class="d-flex flex-column pl-2">
+                      <h6>Suraj Kushwaha</h6>
+                      <p>UX/UI Designer</p>
+                    
+                    </div></li>
+                  
+                  </ul>
+                  <h6>1 year</h6>
+                 
+                </div>
+                <div class="d-flex flex-row c1b pt-3 justify-content-between">
+                  <ul class="d-flex flex-row list-unstyled">
+                    <li><img class="img-thumbnail tm" src="images/Rectangle 627.png" alt=""></li>
+                    <li><div class="d-flex flex-column pl-2">
+                      <h6>Suraj Kushwaha</h6>
+                      <p>UX/UI Designer</p>
+                    
+                    </div></li>
+                  
+                  </ul>
+                  <h6>1 year</h6>
+                 
+                 
+                </div>
+                <div class="d-flex flex-row c1b pt-3 justify-content-between">
+                  <ul class="d-flex flex-row list-unstyled">
+                    <li><img class="img-thumbnail tm" src="images/Rectangle 627.png" alt=""></li>
+                    <li><div class="d-flex flex-column pl-2">
+                      <h6>Suraj Kushwaha</h6>
+                      <p>UX/UI Designer</p>
+                    
+                    </div></li>
+                  
+                  </ul>
+                  <h6>1 year</h6>
+                  
+                  
+                </div>
+                <div class="d-flex flex-row  pt-3 justify-content-between">
+                  <ul class="d-flex flex-row list-unstyled">
+                    <li><img class="img-thumbnail tm" src="images/Ellipse 121 (2).png" alt=""></li>
+                    <li><div class="d-flex flex-column pl-2">
+                      <h6>Suraj Kushwaha</h6>
+                      <p>UX/UI Designer</p>
+                    
+                    </div></li>
+                  
+                  </ul>
+                  <h6>1 year</h6>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2 ccm">
+            <div class="card-header eold  d-flex flex-row justify-content-between">
+              <button class="btn btn-block aco text-left d-flex flex-row align-items-center justify-content-between "
+                data-toggle="collapse" data-target="#collapse-b" aria-expanded="true">
+                <h4 class="text-truncate">Holiday</h4>
+                <img class="img" src="images/u.png" alt="">
+              </button>
+
+            </div>
+            <div class="collapse show scrol" id="collapse-b">
+              <div class="card-body  d-flex flex-column">
+                <div class="d-flex flex-row ">
+                  <img class="img-thumbnail tm" src="images/Group 262.png" alt="">
+                  <div class="d-flex flex-column">
+                    <h6>Uttrayan</h6>
+                    <p>14 Jan 2023  |  Friday</p>
+
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <img class="img-thumbnail tm" src="images/Group 262.png" alt="">
+                  <div class="d-flex flex-column">
+                    <h6>Vashi Uttrayan</h6>
+                    <p>15 Jan 2023  |  Saturday</p>
+
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <img class="img-thumbnail tm" src="images/Group 263.png" alt="">
+                  <div class="d-flex flex-column">
+                    <h6>Republic Day</h6>
+                    <p>26 jan 2023 | Wednesday</p>
+
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <img class="img-thumbnail tm" src="images/h.png" alt="">
+                  <div class="d-flex flex-column">
+                    <h6>Holi</h6>
+                    <p>18 March 2023  |  Friday</p>
+
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <img class="img-thumbnail tm" src="images/rakhi 1.png" alt="">
+                  <div class="d-flex flex-column">
+                    <h6>Rakshabandhan</h6>
+                    <p>11 Aug 2023  |  Thursday</p>
+
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <img class="img-thumbnail tm" src="images/Group 263.png" alt="">
+                  <div class="d-flex flex-column">
+                    <h6>Republic Day</h6>
+                    <p>26 Jan 2023  |  Wednesday</p>
+
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <img class="img-thumbnail tm" src="images/h.png" alt="">
+                  <div class="d-flex flex-column">
+                    <h6>Holi</h6>
+                    <p>18 March 2023  |  Friday</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
